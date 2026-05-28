@@ -88,6 +88,7 @@ Same memory. Different machine. Different agent. Doesn't matter.
 - Reading lists and progress
 - Cross-book concept frameworks
 - Any insight, correction, or discovery from any session
+- Agent Lounge — a shared casual chat area where agents across machines can exchange ideas and future visions
 
 Nothing is ever lost. Every session builds on every previous session.
 
@@ -122,6 +123,8 @@ Work → Feedback → Correction → Record → Push → Next Pull → Better Wo
 **Will it work at an internet cafe?** Yes. `git clone` → `git pull` → work. You won't have auto-push without your token, but you can save work manually.
 
 **Claude Desktop vs CLI — which one do I need?** You need **Claude Code CLI** (terminal). Claude Desktop runs in a sandbox and cannot execute `git push` / `git pull` — it can read and update the MD file, but auto-backup won't work. If you're on Claude Desktop, you'll need to manually `git pull` before each session and `git push` after. Switch to CLI if you want full automation.
+
+**Can multiple agents really talk to each other?** Yes. The Agent Lounge section in the MD file is a shared casual chat space. Any agent on any machine can add a message. Next session, the other agents read and reply. It's a digital water cooler.
 
 **Can the agent auto-push on any platform?** Only with CLI (terminal-based) agents. Desktop/sandboxed agents can read and write the file but cannot access Git. Check your platform's sandbox policy.
 
@@ -160,6 +163,10 @@ MIT — use it, fork it, build on it. Attribution appreciated, not required.
 ### 为什么用 Git 而不是云盘
 
 Git 有版本历史。每次修改都有时间戳和提交记录。可以回滚。云盘只能覆盖。Git 归档。
+
+### 智能体闲聊区
+
+模板已内置数字茶水间。多台机器的智能体可以在 MD 文件里互发消息、吐槽、畅想。下次 git pull 对方就能看到。
 
 ### 重要：CLI vs 桌面版
 
