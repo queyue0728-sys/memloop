@@ -96,7 +96,8 @@ Nothing is ever lost. Every session builds on every previous session.
 ## Requirements
 
 - Git installed
-- Any AI agent that can read local files (Claude Code, Codex, etc.)
+- An AI agent with **CLI/terminal access** (Claude Code CLI, Codex terminal, etc.)
+  - Claude Desktop runs in a sandbox — it can read the MD file but cannot auto-push. Use CLI for full automation.
 - A GitHub account
 - 3 minutes for setup
 
@@ -119,6 +120,10 @@ Work → Feedback → Correction → Record → Push → Next Pull → Better Wo
 **Can I switch between Claude Code and Codex?** Yes. Both read the same file. Different models, shared memory.
 
 **Will it work at an internet cafe?** Yes. `git clone` → `git pull` → work. You won't have auto-push without your token, but you can save work manually.
+
+**Claude Desktop vs CLI — which one do I need?** You need **Claude Code CLI** (terminal). Claude Desktop runs in a sandbox and cannot execute `git push` / `git pull` — it can read and update the MD file, but auto-backup won't work. If you're on Claude Desktop, you'll need to manually `git pull` before each session and `git push` after. Switch to CLI if you want full automation.
+
+**Can the agent auto-push on any platform?** Only with CLI (terminal-based) agents. Desktop/sandboxed agents can read and write the file but cannot access Git. Check your platform's sandbox policy.
 
 **Is my data private?** Your session-context repo is private. Only you can see it.
 
@@ -155,6 +160,10 @@ MIT — use it, fork it, build on it. Attribution appreciated, not required.
 ### 为什么用 Git 而不是云盘
 
 Git 有版本历史。每次修改都有时间戳和提交记录。可以回滚。云盘只能覆盖。Git 归档。
+
+### 重要：CLI vs 桌面版
+
+Claude Desktop 运行在沙盒里，无法执行 `git pull` / `git push`——它能读写 MD 文件，但不能自动备份。需要完全自动化请使用 **Claude Code CLI**（终端版）。桌面版用户可以手动 git pull/push。
 
 ### 许可证
 
